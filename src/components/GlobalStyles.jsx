@@ -8,6 +8,7 @@ const GlobalStyled = createGlobalStyle`
     }
     body {
         font-family: 'Montserrat', sans-serif;
+        color: #ffffff;
     }
 `;
 
