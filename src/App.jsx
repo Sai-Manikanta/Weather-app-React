@@ -1,8 +1,20 @@
+import { useEffect } from "react";
 import styled from 'styled-components';
 import GlobalStyled from './components/GlobalStyles';
 import bg_img from './img/2850815.jpg';
 
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchWeather } from './store/weather';
+
 const App = () => {
+    const dispatch = useDispatch();
+    const { loading, hasError, data } = useSelector(state => state.weather);
+
+    useEffect(() => {
+        dispatch(fetchWeather('london'));
+        console.log('Helo')
+    }, [dispatch])
+
     return ( 
         <AppStyled className="app">
             <GlobalStyled />

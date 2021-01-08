@@ -1,0 +1,1 @@
+export const endPointByLocation = "http://api.weatherapi.com/v1/current.json?key=3e4d0ee34f8540fbb18154351210701&q="; // Location afeter equal sign
